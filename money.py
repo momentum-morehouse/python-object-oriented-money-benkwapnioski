@@ -22,12 +22,13 @@ class Currency:
         self.code = code
         self.symbol = symbol
         self.digits = digits
+    
 
     def __str__(self):
         """
         Should return the currency code, or code with symbol in parentheses.
         """
-        return f"{self.name} {}
+        return f"{self.name} {self.code} {self.symbol} {self.digits}"
 
     def __eq__(self, other):
         """
