@@ -58,7 +58,7 @@ class Money:
         Should use the currency symbol if available, else use the code.
         Use the currency digits to determine number of digits to show.
         """
-        pass
+        return f"{self.amount} {self.currency}"
 
     def __repr__(self):
         return f"<Money {str(self)}>"
