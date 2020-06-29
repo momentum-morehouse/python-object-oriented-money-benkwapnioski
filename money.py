@@ -64,7 +64,7 @@ class Money:
         if self.currency.symbol:
           return f"{self.currency.symbol}{self.amount:.{self.currency.digits}f}"
         else:
-          return f"{self.currency.code}{self.amount:.{self.currency.digits}f}"
+          return f"{self.currency.code} {self.amount:.{self.currency.digits}f}"
 
     def __repr__(self):
         return f"<Money {str(self)}>"
