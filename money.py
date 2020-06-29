@@ -111,4 +111,6 @@ class Money:
         """
         Divide a money object by a number to get a new money object.
         """
-        pass
+        divided = self.amount / divisor
+        newestMoney = Money(divided,self.currency)
+        return newestMoney
